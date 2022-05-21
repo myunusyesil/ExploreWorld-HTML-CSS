@@ -1,0 +1,227 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------- Header -------------- */
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(images/header-bg.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav h2, nav ul li {
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+    margin:20px 20px;
+
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 10px;
+
+}
+nav ul li:hover{
+    background-color: #f3687f;
+    border-radius: 15px;
+
+
+}
+header .text-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+.text-box h1 {
+    font-size: 7vmin;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+.text-box h2 {
+    font-size: 3vmin;  
+}
+.ctn {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #f3687f;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+.line {
+    display: block;
+    width: 200px;
+    height: 4px;
+    background-color: #f3687f;
+    margin: 10px auto;
+}
+
+
+/* ----------- Events -------------- */
+
+.events {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+}
+.row {              
+    display: flex;               /* Flex elamanları için container tanımladık */
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;   
+}
+.events-col {
+    display: flex;
+    flex-direction: column;     /* Sütun içerisindeki elemanların oryantasyonunu y eksenine çevirdik */
+    justify-content: center;    /* Dikey eksende sütundaki elamanları ortaladık */
+    padding: 10px;
+    color: #023e5a;
+}
+.events-col img {
+    width: 100%;
+}
+.events-col img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.4s ease-in ;
+    scale: 1.06;
+} 
+
+.events-col .ctn {
+    margin: 0 auto;
+}
+.events-col h4 {
+    margin: 10px 0;
+}
+.events-col p {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+/* ------------------ Explore ---------------- */
+
+.explore {
+    background-image: url(/images/bg2.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+.explore-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 150px;
+    padding-right: 100px;
+    color: whitesmoke;
+}
+.explore-content h2 {
+    font-size: 5.5vmin;
+
+}
+.explore-content .ctn {
+    margin: 0 auto;
+    margin-left: 0;
+}
+.explore-content .line {
+    margin: 0 -1px;
+}
+.explore-content p {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ------------- Tours ---------------- */
+
+.tours {
+    width: 80%;
+    margin: 20px auto;
+}
+.tours .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.row .text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    padding: 10px;
+    color: #023e5a;
+    margin: 0 auto; 
+}
+.row .text h2 {
+    font-size: 6vmin;
+}
+.row .line {
+    margin-left: -1px
+}
+.text .ctn {
+    margin: 10px auto;
+    margin-left: 0;
+}
+.row .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 65%;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+}
+.row .images img {
+    width: 350px;
+    min-width: 125px;
+    padding: 10px;
+}
+
+.row .images img:hover{
+    transform: rotate(2deg);
+    transition: .5s;
+}
+
+/* ------------- Footer ---------------- */
+
+footer {
+    text-align: center;
+    padding-top: 60px;
+    background-color: #023e5a;
+    color: rgba(192, 192, 192, 0.5);
+    height: 150px;
+}
